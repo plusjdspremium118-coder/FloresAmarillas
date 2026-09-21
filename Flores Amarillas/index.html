@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="description" content="21 de Septiembre — Día de las Flores Amarillas. Un regalo especial para ti.">
+  <title>🌻 Para Ti — 21 de Septiembre | Flores Amarillas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Pinyon+Script&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       CONTENEDOR DE PARTÍCULAS (Lluvia de flores)
+  =================================================================== -->
+  <div id="particles-container" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       FONDO FLORAL ACUARELA (Parte inferior)
+  =================================================================== -->
+  <div class="bg-flowers" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       ESCENA PRINCIPAL
+  =================================================================== -->
+  <main class="scene" id="mainScene">
+
+    <!-- ===============================================================
+         FASE 1: SOBRE CERRADO CON SELLO DE LACRE
+    =============================================================== -->
+    <section class="envelope-section" id="envelopeSection">
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Toca para abrir tu regalo">
+        <!-- Cuerpo del sobre -->
+        <div class="envelope-body">
+          <div class="envelope-back"></div>
+          <div class="envelope-pocket"></div>
+          <div class="envelope-pocket-front"></div>
+          <div class="envelope-flap" id="envelopeFlap"></div>
+        </div>
+
+        <!-- Sello de lacre -->
+        <div class="wax-seal" id="waxSeal">
+          <div class="wax-seal-inner">
+            <svg class="seal-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(24,24)">
+                <ellipse cx="0" cy="-14" rx="5" ry="11" fill="#e5b958" opacity="0.9"/>
+                <ellipse cx="0" cy="-14" rx="5" ry="11" fill="#e5b958" opacity="0.9" transform="rotate(72)"/>
+                <ellipse cx="0" cy="-14" rx="5" ry="11" fill="#e5b958" opacity="0.9" transform="rotate(144)"/>
+                <ellipse cx="0" cy="-14" rx="5" ry="11" fill="#e5b958" opacity="0.9" transform="rotate(216)"/>
+                <ellipse cx="0" cy="-14" rx="5" ry="11" fill="#e5b958" opacity="0.9" transform="rotate(288)"/>
+                <circle cx="0" cy="0" r="6" fill="#8b5e2b"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Texto indicador -->
+        <p class="open-hint">
+          <span class="hint-heart">♥</span>
+          Toca para abrir
+          <span class="hint-heart">♥</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         FASE 2: EXPLOSIÓN DE FLORES Y RAMO FINAL
+    =============================================================== -->
+    <section class="reveal-section" id="revealSection">
+      <!-- Ramo de flores (aparece al final de la animación) -->
+      <div class="bouquet-wrapper" id="bouquetWrapper">
+        <img src="img/bouquet.jpg" alt="Ramo de flores amarillas" class="bouquet-img" id="bouquetImg">
+        <div class="bouquet-glow"></div>
+      </div>
+
+      <!-- EDITAR AQUÍ EL MENSAJE: Texto de dedicatoria debajo del ramo -->
+      <div class="message-block" id="messageBlock">
+        <p class="message-date">21 de Septiembre</p>
+        <div class="message-divider">
+          <span></span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4Z"/></svg>
+          <span></span>
+        </div>
+        <h1 class="message-title" id="messageTitle">Feliz día de las flores amarillas</h1>
+        <p class="message-text" id="messageText">Que cada pétalo amarillo te recuerde lo especial que eres y que no es necesario un día en específico para demostrarte lo que puedes importarle a alguien. Estas flores son para ti, ten un buen dia Princesa Hermosa.</p>
+        <p class="message-signature" id="messageSignature">Con mucho cariño ♥</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
